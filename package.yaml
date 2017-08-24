@@ -1,0 +1,33 @@
+name:                you-thar
+version:             0.1.0.0
+#synopsis:
+#description:
+homepage:            https://github.com/tippenein/you-thar#readme
+license:             BSD3
+author:              Brady Ouren
+maintainer:          brady.ouren@gmail.com
+copyright:           2017 Brady Ouren
+category:            Development
+extra-source-files:
+- README.md
+
+dependencies:
+  - base >= 4.7 && < 5
+  - feed
+  - lens
+  - stringsearch
+  - http-client
+  - http-types
+  - http-conduit
+  - bytestring
+  - parallel
+  - async
+
+executables:
+  you-thar:
+    source-dirs:      src
+    main:             Main.hs
+    ghc-options:
+      - -threaded
+      - -rtsopts
+      - -with-rtsopts=-N
